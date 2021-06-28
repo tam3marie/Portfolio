@@ -30,6 +30,29 @@ p {
   font-weight: normal;
   line-height: 30px;
 }
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a {
+  color: #272142;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--primary-color);
+}
+
 .hero {
   text-align: center;
   background-color: var(--secondary-color);
@@ -101,6 +124,10 @@ p {
   max-height: 600px;
 }
 
+.logo {
+  max-height: 40px;
+}
+
 @media (max-width: 960px) {
   .project-description {
     padding: 0;
@@ -112,6 +139,9 @@ p {
   }
   h2 {
     font-size: 44px;
+  }
+  nav a {
+    font-size: 12px;
   }
   .hero p {
     font-size: 28px;

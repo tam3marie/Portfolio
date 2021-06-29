@@ -240,6 +240,9 @@ footer .contact-box p {
   footer .contact-box {
     padding: 30px;
   }
+  footer .email-link {
+    font-size: 20px;
+  }
 
   .hero p {
     font-size: 28px;
@@ -253,5 +256,10 @@ footer .contact-box p {
 
   .project-demo-links a {
     margin: 12px 0;
+  }
+  .btn {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 12px;
   }
 }

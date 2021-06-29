@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Contact Tammy Knight, a front-end engineer based in Kennesaw, GA, USA, with a passion for User-Experience."
+    />
+    <title>Contact Tammy | Tammy Knight</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -31,24 +35,123 @@
     ></script>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Tammy Knight's Homepage"
+          ><img
+            src="/images/logo-shecodes.png"
+            class="logo d-none d-md-block"
+            alt="Tammy Logo"
+        /></a>
+        <a href="/" title="Tammy Knight's Homepage"
+          ><img
+            src="/images/logo-small.png"
+            class="logo d-block d-md-none"
+            alt="Tammy Logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="/" title="Tammy Knight's Homepage">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Tammy Knight">About</a>
+          </li>
+          <li>
+            <a href="/projects.html" title="Tammy Knight's Projects"
+              >Projects</a
+            >
+          </li>
+          <li class="active">
+            <a href="/contact.html" title="Contact Tammy Knight">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
-      <div class="content">
+      <div class="content text-center">
         <h1 class="mb-5">Let's get in touch!</h1>
+        <div class="conact-links">
         <h3>Email</h3>
         <p>
-          <a href="mailto:tammymknight@gmail.com">tammymknight@gmail.com</a>
+          <a href="mailto:tammymknight@gmail.com" class="contact-links" title="Email Tammy Knight">tammymknight@gmail.com</a>
         </p>
         <h3>GitHub</h3>
         <p>
-          <a href="https://github.com/tam3marie" target="_blank">@tam3marie</a>
+          <a href="https://github.com/tam3marie" class="contact-links" target="_blank" title="View Tammy Knight's GitHub Profile">@tam3marie</a>
         </p>
         <h3>LinkedIn</h3>
         <p>
-          <a href="https://www.linkedin.com/in/tammymknight/" target="_blank"
+          <a href="https://www.linkedin.com/in/tammymknight/" class="contact-links" target="_blank" title="View Tammy Knight's LinkedIn Profile"
             >@tammymknight</a
           >
         </p>
       </div>
+      
     </div>
+  <footer>
+        <div class="contact-box d-flex justify-content-between mb-5">
+          <div>
+            <h4>Work Inquiry</h4>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="/contact.html"
+              class="btn btn-branding d-none d-md-block mt-3"
+              title="Contact Tammy Knight via email"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:tammymknight@gmail.com"
+            class="email-link"
+            title="Email Tammy Knight"
+            >tammymknight@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://github.com/tam3marie"
+            target="_balnk"
+            title="Tammy Knight's GitHub Profile"
+            ><i class="fab fa-github-square"></i></a
+          ><a
+            href="https://www.linkedin.com/in/tammymknight/"
+            target="_balnk"
+            title="Tammy Knight's LinkedIn Profile"
+            ><i class="fab fa-linkedin"></i></a
+          ><a
+            href="https://www.facebook.com/tam3marie/"
+            target="_balnk"
+            title="Tammy Knight's Facebook Profile"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+        </div>
+        <div class="open-source text-center mt-5">
+          <a
+            href="https://github.com/tam3marie/Portfolio"
+            target="_blank"
+            title="Tammy Knight's GitHub Portfolio Project"
+            >Open-Source Code</a
+          >
+          by Tammy Knight
+          <br />
+          <a
+            href="https://app.netlify.com/sites/trusting-ramanujan-3de7b5/overview"
+            target="_blank"
+            title="Tammy Knight's Netlify Portfolio Project"
+            >Hosted</a
+          >
+          on
+          <a
+            href="https://www.netlify.com/"
+            target="_blank"
+            title="Link to Netlify"
+            >Netlify</a
+          >
+        </div>
+      </footer>
   </body>
 </html>

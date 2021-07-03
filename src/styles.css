@@ -1,12 +1,16 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --main-color: #222d44;
+  --primary-color: #c48f7f;
+  --secondary-color: #f4ddd5;
+  --text-primary-color: #3d3d3d;
+  --text-secondary-color: #eae9e5;
   --header-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
+  background-color: var(--main-color);
 }
 
 h1,
@@ -20,21 +24,26 @@ h6 {
 
 h1 {
   font-size: 96px;
+  color: var(--text-secondary-color);
 }
 
 h2 {
   font-size: 64px;
+  color: var(--text-secondary-color);
 }
 h3 {
   font-weight: bold;
+  color: var(--text-secondary-color);
 }
 h4 {
   font-size: 48px;
+  color: var(--text-primary-color);
 }
 p {
   font-size: 16px;
   font-weight: normal;
   line-height: 30px;
+  color: var(--text-secondary-color);
 }
 nav {
   padding: 20px 0;
@@ -50,13 +59,14 @@ nav li {
   margin-left: 15px;
 }
 nav a {
-  color: #272142;
+  color: var(--main-color);
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
 nav a:hover,
 nav li.active a {
   color: var(--primary-color);
+  text-decoration: underline;
 }
 
 footer {
@@ -64,13 +74,13 @@ footer {
 }
 
 footer .email-link {
-  color: black;
+  color: var(--primary-color);
   font-size: 24px;
   text-decoration: none;
 }
 
 footer .email-link:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 
@@ -93,6 +103,7 @@ footer .contact-box {
   background-color: var(--secondary-color);
   border-radius: 10px;
   padding: 30px 120px;
+  color: var(--text-primary-color);
 }
 
 footer .contact-box p {
@@ -109,15 +120,20 @@ footer .contact-box p {
   text-align: center;
 }
 
+.hero h1 {
+  color: var(--main-color);
+}
+
 .hero p {
   font-size: 36px;
   font-weight: bold;
   line-height: 1;
   margin: 0;
+  color: var(--main-color);
 }
 
 .hero h2 {
-  color: #272142;
+  color: var(--main-color);
   font-family: var(--default-font-family);
   font-size: 24px;
   font-weight: normal;
@@ -126,12 +142,13 @@ footer .contact-box p {
 
 .btn:hover {
   cursor: pointer;
+  color: var(--secondary-color);
 }
 
 .btn-branding {
   background-color: var(--primary-color);
   border-radius: 4px;
-  color: white;
+  color: var(--main-color);
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
@@ -149,6 +166,10 @@ footer .contact-box p {
 .btn-project-launch {
   font-size: 16px;
   padding: 9px 17px;
+}
+
+.project-description h2 {
+  color: var(--primary-color);
 }
 
 .project-description {
@@ -181,17 +202,25 @@ footer .contact-box p {
   border-radius: 18px;
   max-width: 80%;
 }
-
+.about-me-overview {
+  color: var(--text-secondary-color);
+}
 .about-paragraphs {
   background-color: var(--secondary-color);
-  color: #272142;
   display: flex;
   margin: 30px 0;
   padding: 20px;
   text-align: center;
 }
 
+.about-paragraphs p {
+  color: var(--text-primary-color);
+}
 .about-paragraphs span {
+  color: var(--primary-color);
+}
+
+.project-title {
   color: var(--primary-color);
 }
 
@@ -205,12 +234,15 @@ footer .contact-box p {
   font-weight: 500;
 }
 
+.open-source {
+  color: var(--text-secondary-color);
+}
 .open-source a {
   color: var(--primary-color);
 }
 
 .open-source a:hover {
-  color: blue;
+  color: var(--secondary-color);
   cursor: pointer;
 }
 

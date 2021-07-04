@@ -1,5 +1,5 @@
 :root {
-  --main-color: #222d44;
+  --main-background-color: #222d44;
   --primary-color: #c48f7f;
   --secondary-color: #f4ddd5;
   --text-primary-color: #3d3d3d;
@@ -9,8 +9,8 @@
 }
 
 body {
+  background-color: var(--main-background-color);
   font-family: var(--default-font-family);
-  background-color: var(--main-color);
 }
 
 h1,
@@ -23,27 +23,27 @@ h6 {
 }
 
 h1 {
-  font-size: 96px;
   color: var(--text-secondary-color);
+  font-size: 96px;
 }
 
 h2 {
-  font-size: 64px;
   color: var(--text-secondary-color);
+  font-size: 64px;
 }
 h3 {
-  font-weight: bold;
   color: var(--text-secondary-color);
+  font-weight: bold;
 }
 h4 {
-  font-size: 48px;
   color: var(--text-primary-color);
+  font-size: 48px;
 }
 p {
+  color: var(--text-secondary-color);
   font-size: 16px;
   font-weight: normal;
   line-height: 30px;
-  color: var(--text-secondary-color);
 }
 nav {
   padding: 20px 0;
@@ -59,7 +59,7 @@ nav li {
   margin-left: 15px;
 }
 nav a {
-  color: var(--main-color);
+  color: var(--main-background-color);
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
@@ -85,9 +85,9 @@ footer .email-link:hover {
 }
 
 footer .social-links a {
-  color: var(--primary-color);
   background-color: var(--secondary-color);
   border-radius: 50%;
+  color: var(--primary-color);
   font-size: 18px;
   margin: 0 20px;
   padding: 10px 14px;
@@ -102,8 +102,8 @@ footer .social-links a:hover {
 footer .contact-box {
   background-color: var(--secondary-color);
   border-radius: 10px;
-  padding: 30px 120px;
   color: var(--text-primary-color);
+  padding: 30px 120px;
 }
 
 footer .contact-box p {
@@ -121,19 +121,19 @@ footer .contact-box p {
 }
 
 .hero h1 {
-  color: var(--main-color);
+  color: var(--main-background-color);
 }
 
 .hero p {
+  color: var(--main-background-color);
   font-size: 36px;
   font-weight: bold;
   line-height: 1;
   margin: 0;
-  color: var(--main-color);
 }
 
 .hero h2 {
-  color: var(--main-color);
+  color: var(--main-background-color);
   font-family: var(--default-font-family);
   font-size: 24px;
   font-weight: normal;
@@ -141,14 +141,14 @@ footer .contact-box p {
 }
 
 .btn:hover {
-  cursor: pointer;
   color: var(--secondary-color);
+  cursor: pointer;
 }
 
 .btn-branding {
   background-color: var(--primary-color);
   border-radius: 4px;
-  color: var(--main-color);
+  color: var(--main-background-color);
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
@@ -189,8 +189,8 @@ footer .contact-box p {
 }
 .content h3 {
   font-family: var(--default-font-family);
-  font-size: 24px;
   line-height: 1.5;
+  font-size: 24px;
 }
 .content p {
   font-size: 16px;
